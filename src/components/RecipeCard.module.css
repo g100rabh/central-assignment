@@ -1,0 +1,10 @@
+.recipeCard {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.recipeCard:hover {
+  background-color: #999191;
+}
