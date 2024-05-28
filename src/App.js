@@ -5,6 +5,7 @@ import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   const [activePage, setActivePage] = useState("/");
@@ -16,6 +17,7 @@ function App() {
         {activePage === "/about" && <About />}
         {activePage === "/experience" && <Experience />}
         {activePage === "/projects" && <Projects />}
+        {activePage === "/skills" && <Skills />}
       </main>
     </div>
   );
