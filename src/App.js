@@ -12,7 +12,7 @@ function App() {
   const [activePage, setActivePage] = useState("/");
   return (
     <div className="App">
-      <Header setActivePage={setActivePage} />
+      <Header setActivePage={setActivePage} activePage={activePage} />
       <main>
         {activePage === "/" && <Home />}
         {activePage === "/about" && <About />}
