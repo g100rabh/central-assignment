@@ -1,13 +1,17 @@
+import { useState } from "react";
 import "./App.css";
+import About from "./components/About";
 import Header from "./components/Header";
 import Home from "./components/Home";
 
 function App() {
+  const [activePage, setActivePage] = useState("/");
   return (
     <div className="App">
-      <Header />
+      <Header setActivePage={setActivePage} />
       <main>
-        <Home />
+        {activePage === "/" && <Home />}
+        {activePage === "/about" && <About />}
       </main>
     </div>
   );

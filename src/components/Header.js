@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ setActivePage }) => {
   return (
     <header className={styles.header}>
-      <Navbar />
+      <Navbar setActivePage={setActivePage} />
     </header>
   );
 };
