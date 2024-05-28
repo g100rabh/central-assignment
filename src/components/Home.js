@@ -7,7 +7,7 @@ const Home = () => {
     <section id="home" className={styles.home}>
       <h1>Welcome to My Portfolio</h1>
       <p>
-        Hi, I'm
+        Hi, I'm{" "}
         <strong>
           <em>{personalInfo.name}</em>
         </strong>

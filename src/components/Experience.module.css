@@ -1,0 +1,26 @@
+.experience {
+  padding: 4rem 2rem;
+  background: #f0f0f0;
+}
+
+.expItem {
+  margin-bottom: 2rem;
+}
+
+.expItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.expItem p {
+  margin-bottom: 0.5rem;
+}
+
+.expItem ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.expItem ul li {
+  margin-bottom: 0.5rem;
+}
