@@ -2,10 +2,21 @@ export const personalInfo = {
   name: "Saurabh Gupta",
   phone: "+919424995834",
   email: "gsaurabh909@gmail.com",
-  linkedIn: "LinkedIn",
-  portfolio: "Portfolio",
+  linkedIn: "https://www.linkedin.com/in/saurabh-gupta13/",
   location: "Indore, India",
-  description: "xyz",
+  description: `
+  Hello! I'm Saurabh Gupta, a passionate Software Engineer with a strong background in frontend and backend development. 
+  I have a Bachelor of Engineering degree in Civil Engineering from Technocrats Institute of Technology, where I graduated with an 8.2 GPA.
+
+  Currently, I'm working at Codecaffiene Technologies Pvt Ltd. as a Software Engineer. In this role, I spearheaded the implementation of modern frontend libraries and tools such as Redux and Tailwind, leading to a 30% improvement in application performance and scalability. 
+  I have collaborated with cross-functional teams to deliver over 15 features, bug fixes, and improvements, consistently meeting project deadlines.
+
+  My previous experience includes working as an Associate Software Engineer at Accenture. There, I optimized JIT production stages for the IJCore project, reducing production time by 25%, and designed user-friendly interfaces with React and ASP.NET, which increased user satisfaction by 40%.
+
+  I have strong skills in various programming languages, frameworks, and tools such as JavaScript, TypeScript, React.js, Next.js, Prisma, and many others. I am also proficient in optimizing data systems and implementing robust authentication systems to enhance user security.
+
+  Besides my technical skills, I am committed to continuous learning and improvement, having solved over 150 LeetCode questions. I qualified for the Gate Civil Engineering exams in both 2020 and 2021.
+`,
 };
 
 export const experience = [
@@ -69,21 +80,21 @@ export const projects = [
       "Optimized state management with Redux, reducing unnecessary re-renders and enhancing performance by 60%.",
       "Reduced heavy lifting tasks by 40%, ensuring a smoother user experience.",
     ],
-    link: "Link",
+    link: "https://github.com/g100rabh/myReat17_mailBox",
   },
   {
     title: "Expense Tracker",
     techUsed: ["React.js", "CSS", "Redux", "React Route v6", "Firebase"],
     description:
       "Developed an expense management web app with authentication and storage, featuring premium features like dark/light mode switch and expense download, resulting in streamlined expense tracking for users.",
-    link: "Link",
+    link: "https://github.com/g100rabh/MyReact13_ExpenseTracker",
   },
   {
     title: "Paryatan",
     techUsed: ["React.js", "CSS", "Route v6", "JavaScript"],
     description:
       "Engineered and deployed a captivating travel website with a strong emphasis on showcasing diverse destinations across India, ensuring an engaging user experience.",
-    link: "Link",
+    link: "https://my-paryaton-tours.firebaseapp.com/",
   },
 ];
 

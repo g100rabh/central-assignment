@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -18,6 +19,7 @@ function App() {
         {activePage === "/experience" && <Experience />}
         {activePage === "/projects" && <Projects />}
         {activePage === "/skills" && <Skills />}
+        {activePage === "/contact" && <Contact />}
       </main>
     </div>
   );
