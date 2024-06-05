@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import { CartContext } from "../context/CartContext";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const { cart } = useContext(CartContext);
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -17,7 +20,9 @@ const Header = () => {
           <li>
             <Link to="/cart">
               <FaShoppingCart />
-              <span className={styles.itemCount}>{0}</span>
+              {cart.length > 0 && (
+                <span className={styles.itemCount}>{cart.length}</span>
+              )}
             </Link>
           </li>
         </ul>

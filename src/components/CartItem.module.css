@@ -1,0 +1,23 @@
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.quantityInput {
+  width: 60px;
+  margin: 0 10px;
+}
+
+.removeButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.removeButton:hover {
+  background-color: #c82333;
+}

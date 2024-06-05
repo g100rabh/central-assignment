@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import styles from "./ProductCard.module.css";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, addToCart }) => {
   const [quantity, setQuantity] = useState(1);
+
+  const handleAddToCart = () => {
+    addToCart({ ...product, quantity });
+  };
 
   return (
     <div className={styles.productCard}>
@@ -11,7 +15,7 @@ const ProductCard = ({ product }) => {
         alt={product.name}
         className={styles.productImage}
       />
-      <h3>{product.name}</h3>
+      <h3>{product.title}</h3>
       <p>${product.price.toFixed(2)}</p>
       <input
         type="number"
@@ -20,7 +24,9 @@ const ProductCard = ({ product }) => {
         className={styles.quantityInput}
         onChange={(e) => setQuantity(Number(e.target.value))}
       />
-      <button className={styles.addToCartButton}>Add to Cart</button>
+      <button className={styles.addToCartButton} onClick={handleAddToCart}>
+        Add to Cart
+      </button>
     </div>
   );
 };
