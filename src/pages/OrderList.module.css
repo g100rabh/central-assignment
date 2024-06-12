@@ -1,0 +1,53 @@
+.orderList {
+  padding: 20px;
+}
+
+.orderList h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.order h3 {
+  margin-top: 0;
+}
+
+.order p {
+  margin: 5px 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemDetails p {
+  margin: 2px 0;
+}

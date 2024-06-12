@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import OrderList from "../pages/OrderList";
+import Header from "../components/Header";
 
-const OrdersLayout = () => {
+const Layout = () => {
   return (
     <div>
-      <OrderList />
+      <Header />
       <Outlet />
     </div>
   );
 };
 
-export default OrdersLayout;
+export default Layout;

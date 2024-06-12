@@ -1,10 +1,12 @@
-import React, { useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { useCart } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
 import styles from "./Checkout.module.css";
+import { OrdersContext } from "../context/OrderContext";
 
 const Checkout = () => {
   const { cart, dispatch } = useCart();
+  const { addOrder } = useContext(OrdersContext);
   const navigate = useNavigate();
 
   const totalQuantity = useMemo(
@@ -18,11 +20,19 @@ const Checkout = () => {
   );
 
   const handleConfirm = () => {
+    const date = Date.now();
+    const order = {
+      id: date.toString(),
+      items: cart,
+      totalQuantity,
+      totalPrice,
+      date: new Date().toISOString(),
+    };
+    addOrder(order);
     dispatch({ type: "CLEAR_CART" });
     alert("Order confirmed!");
     navigate("/");
   };
-
   return (
     <div className={styles.checkout}>
       <h2>Checkout</h2>

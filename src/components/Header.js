@@ -12,6 +12,9 @@ const Header = () => {
       <div className={styles.logo}>
         <Link to="/">E-commerce App</Link>
       </div>
+      <div>
+        <Link to="/orders">Orders</Link>
+      </div>
       <nav className={styles.nav}>
         <ul>
           <li>
