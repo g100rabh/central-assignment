@@ -33,7 +33,6 @@ const Checkout = () => {
           {cart.map((item) => (
             <div key={item.id} className={styles.checkoutItem}>
               <img src={item.image} alt={item.name} width="6%" height="6%" />
-
               <p>
                 {item.title} x {item.quantity}
               </p>
